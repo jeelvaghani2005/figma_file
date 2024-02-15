@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+body {
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.navbar {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.header {
+  padding: 0px 30px;
+  background-color: #21263c;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header .header-text .inpu {
+  background-color: #21263c;
+  padding: 5px 60px;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon {
+  position: relative;
+  left: 10%;
+}
+
+.header-text .inpu::placeholder {
+  color: white;
+}
+
+.header-text .inpu:focus {
+  color: white;
+}
+
+.sidebar {
+  padding: 20px 30px;
+}
+
+.sidebar .side-icon li i {
+  margin-right: 10px;
+}
+
+
+.sidebar .side-icon .nav-link {
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: black;
+}
+.active {
+  color: white !important;
+  background-color: #408dfb;
+}
+/* card */
+
+.main .card .card-footer {
+  background-color: #c9c9c9;
+}
+
+.main .card-text {
+  padding-top: 20px;
+}
+
+.main .card-text span {
+  font-style: 12px;
+  color: #000;
+  font-weight: 400;
+  border-bottom: 3px solid #978d8d;
+  display: inline-block;
+  padding-bottom: 2px;
+  /* border-radius: ; */
+}
+
+.main .chart-img-1_1 {
+  position: relative;
+  bottom: 55px;
+  left: 75px;
+}
+
+.items-drop {
+  background-color: white;
 }
